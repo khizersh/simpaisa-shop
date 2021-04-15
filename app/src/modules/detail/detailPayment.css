@@ -1,0 +1,197 @@
+/* Payment */
+
+.payment-channel-element {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 10px 0;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+
+.payment-channel-link {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+  min-height: 72px;
+  justify-content: space-between;
+}
+
+.active .element-check-label {
+  display: block;
+}
+.element-check-label {
+  background-color: #00bd5f;
+  color: #fff;
+  width: 24px;
+  height: 54px;
+  position: absolute;
+  top: -19px;
+  left: -1px;
+  transform: rotate(45deg);
+  display: none;
+}
+
+.element-check-label:before {
+  content: "";
+  width: 4px;
+  height: 12px;
+  display: block;
+  border: 3px solid #fff;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  border-top: none;
+  border-left: none;
+  border-radius: 2px;
+}
+
+.payment-channel-container {
+  display: flex;
+  width: 64%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-logo-container {
+  margin: 0;
+  padding: 15px 7px;
+}
+
+.logo {
+  max-width: 100%;
+  display: block;
+  padding-left: 15px;
+  max-height: 32px;
+}
+
+.payment-price-container {
+  font-size: 10px;
+  color: #999;
+  width: 36%;
+  padding-left: 8px;
+  padding-right: 4px;
+}
+.howItWorks,
+.payment-price-container,
+.payment-tagline-container {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.price,
+.price_label {
+  text-align: left;
+}
+
+.price {
+  /* padding-left: 10px; */
+  padding-top: 3px;
+  color: #699830;
+  font-size: 12px;
+}
+
+.number-form-input {
+  font-size: 20px;
+  width: 60%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 12px;
+}
+
+.number-form-btn__submit {
+  background-color: #00bd5f;
+  font-size: 20px;
+  min-width: 203px;
+  max-width: 395px;
+  min-height: 48px;
+  max-height: 52px;
+  color: #fff;
+  text-decoration: none;
+  /* display: flex; */
+  align-items: center;
+  padding: 10px 0 10px 0px;
+  border-radius: 4px;
+  margin: 0 auto;
+  border: none;
+  box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 25%);
+  text-align: center;
+  line-height: 28px;
+}
+
+.payment-tagline-container {
+  background-color: #eee;
+  color: #333;
+  font-size: 11px;
+  padding: 5px 15px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  display: none;
+  width: 100%;
+}
+
+.payment-channel-element.active .payment-tagline-container {
+  display: block;
+  width: 100%;
+}
+
+.payment-tagline {
+  margin: 0;
+}
+
+.best-deal-label {
+  display: none;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  top: 0;
+}
+.ul-paymentChannels li {
+  text-decoration: none !important;
+}
+
+.number-form-btn__submit:hover {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 992px) {
+  .price_label {
+    font-size: 14px;
+  }
+  .price {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .payment-price-container {
+    font-size: 12px;
+    letter-spacing: 0.13px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .payment-logo-container {
+    padding: 15px 6px;
+  }
+}
+
+@media screen and (min-width: 460px) {
+  .logo {
+    max-height: 42px;
+  }
+  .price {
+    font-size: 14px;
+  }
+
+  .payment-price-container {
+    text-align: right;
+    width: 28%;
+  }
+
+  .payment-tagline-container {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,204 @@
+.history-container {
+  max-width: 740px;
+  margin: auto auto 10px;
+  padding-top: 8px;
+  max-height: 50vw;
+}
+
+.bg-green {
+  background-color: #00bd5f;
+}
+
+.card {
+  box-shadow: 0 0px 8px 0 rgb(0 0 0 / 20%);
+  transition: 0.3s;
+  border-radius: 7px;
+}
+.cont {
+  padding: 14px 0px;
+}
+.font {
+  font-size: 17px;
+}
+
+/* card */
+
+.promo-banner-container {
+  max-width: 740px;
+  margin: auto auto 10px;
+  padding-top: 8px;
+  max-height: 50vw;
+}
+@media screen and (max-width: 700px) {
+}
+.text-center {
+  text-align: center;
+}
+
+.bg-green {
+  background-color: #00bd5f !important;
+  color: white;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background: white;
+  border-radius: 7px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 0px;
+}
+
+.border-round {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 15px; /* 5px rounded corners */
+}
+
+.badge {
+  padding: 7px 8px 7px 8px;
+  margin-right: 10px;
+  border-radius: 15px;
+  border: 1px solid #00bd5f;
+}
+
+.badge a {
+  color: #00bd5f;
+  padding: 5px;
+}
+
+.badge:hover > a {
+  transition: all 0.2s;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.badge:hover {
+  transition: all 0.3s;
+  background-color: #00bd5f;
+}
+.mt-2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 2rem;
+}
+
+.mt-2-inner {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.mt-1 {
+  margin-top: 1rem;
+  margin-bottom: 10px;
+}
+.text-muted {
+  color: rgb(109, 108, 108);
+}
+
+.float-right {
+  float: right;
+}
+
+.text-cancel {
+  text-decoration: line-through;
+  font-size: 15px;
+}
+.d-block {
+  display: block;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.float-left {
+  float: left;
+}
+
+.mx-2 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: #f7f7f7;
+}
+
+.text-body {
+  color: #f7f7f7;
+}
+.pos-rel-curve-left {
+  position: relative;
+  left: -18px;
+}
+
+.pos-rel-curve-right {
+  position: relative;
+  left: 40rem;
+}
+.curve {
+  width: 17px;
+  height: 17px;
+  background: #f7f7f7;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border: 1px solid;
+}
+.pl-2 {
+  padding-left: 10px;
+}
+
+.curve-right {
+  width: 17px;
+  height: 17px;
+  background: #f7f7f7;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border: 1px solid;
+}
+
+.text-center {
+  text-align: center;
+}
+@media only screen and (max-width: 900px) {
+  .promo-banner-container {
+    max-width: 100% !important;
+    margin: auto auto 10px;
+    padding-top: 8px;
+    max-height: 100%;
+    overflow: hidden;
+  }
+  .pos-rel-curve-right {
+    position: relative;
+    left: 31rem;
+  }
+}
+.text-right {
+  text-align: right;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.back-shop {
+  background-color: #00bd5f;
+  color: white !important;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.show-detail:hover {
+  text-decoration: none !important;
+}

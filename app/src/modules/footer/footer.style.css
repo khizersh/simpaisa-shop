@@ -1,0 +1,265 @@
+.simpaisa-about-container {
+  background-color: #edeaf1;
+  padding: 15px 30px;
+}
+
+.simpaisa-about__card-container,
+.simpaisa-about__header,
+.simpaisa-about__short-description {
+  max-width: 740px;
+  margin: 10px auto;
+}
+
+.simpaisa-about__header {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  color: #504461;
+}
+
+.max-width {
+  max-width: 740px !important;
+  margin: 10px auto;
+}
+.simpaisa-about__card-container {
+  white-space: nowrap;
+  padding: 15px 0;
+}
+
+.simpaisa-about__card__icon-area {
+  display: inline-block;
+  width: 20%;
+  max-width: 48px;
+  vertical-align: top;
+  padding: 5px 10px 10px 0;
+}
+
+.simpaisa-about__icon-card {
+  max-width: 100%;
+  display: block;
+}
+
+.simpaisa-about__card-content {
+  display: inline-block;
+  width: 80%;
+  padding-left: 10px;
+}
+
+.simpaisa-about__card__desc-area {
+  word-break: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+  font-size: 12px;
+}
+
+.about-title {
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: #504461;
+}
+
+.simpaisa-about__card__title-area {
+  font-weight: 700;
+}
+
+/* footer */
+
+.footer-container {
+  box-sizing: border-box;
+  background-color: #504461;
+  display: flex;
+  padding: 10px;
+  width: 100%;
+}
+.footer-area {
+  width: 100%;
+  max-width: 740px;
+  margin: auto;
+}
+.left-blocks-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.socials-container,
+.support-container {
+  width: 46%;
+  max-width: 132px;
+  min-height: 84px;
+}
+
+.international-container,
+.socials-container,
+.support-container {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 8px;
+  margin: 10px 8px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.social-title,
+.support-title {
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 3px;
+  color: #464646;
+  width: 100%;
+  text-align: center;
+}
+
+.support-icons {
+  max-width: 96px;
+  width: 100%;
+  margin: auto;
+  padding: 6px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  direction: ltr;
+}
+
+.footer__social-media-container {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 128px;
+  margin: auto;
+  direction: ltr;
+}
+
+.social-icon-container {
+  width: 33.3333%;
+  padding: 4px;
+}
+.social-icon {
+  width: 24px;
+  align-self: center;
+}
+
+.contact-icon,
+.contact-text,
+.social-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.support-link {
+  color: #2e33aa;
+  direction: ltr;
+  padding-top: 6px;
+}
+
+.contact-text,
+.support-link {
+  text-decoration: none;
+}
+
+.international-container {
+  min-height: 84px;
+  max-width: 200px;
+  min-width: 125px;
+}
+
+.international-flag-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer__country-flag {
+  background-color: #f3f3f3 !important;
+}
+
+.f32_pakistan {
+  background-position: 0px -5382px !important;
+}
+.socials-container,
+.support-container {
+  width: 46%;
+  max-width: 132px;
+  min-height: 84px;
+}
+
+.legal-content-container a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none !important;
+  font-weight: bold;
+}
+.copyright-container {
+  color: white;
+  font-size: 12px;
+}
+.legal-content-container a:hover {
+  color: white;
+  text-decoration: none !important;
+}
+.legal-content-container {
+  text-align: center;
+  display: grid;
+  margin: auto;
+}
+
+@media screen and (min-width: 767px) {
+  .footer-area {
+    white-space: nowrap;
+  }
+  .left-blocks-container,
+  .right-blocks-container {
+    display: inline-flex;
+    flex-flow: wrap;
+  }
+  .left-blocks-container {
+    width: 70%;
+    justify-content: normal;
+  }
+  .international-container,
+  .socials-container,
+  .support-container {
+    margin: 15px 8px;
+  }
+
+  .socials-container,
+  .support-container {
+    max-width: 150px;
+    word-break: break-word;
+    white-space: normal;
+  }
+
+  .international-container,
+  .socials-container,
+  .support-container {
+    margin: 15px 8px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .legal-content-container {
+    text-align: right;
+  }
+  .socials-container,
+  .support-container {
+    width: 46%;
+    max-width: 140px;
+    min-height: 84px;
+  }
+  .social-icon {
+    width: 26px;
+  }
+  .international-container {
+    min-height: 84px;
+    max-width: 165px;
+  }
+}

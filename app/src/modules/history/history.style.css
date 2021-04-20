@@ -14,6 +14,11 @@
   transition: 0.3s;
   border-radius: 7px;
 }
+
+.border {
+  margin: 5px auto;
+  border-radius: 7px;
+}
 .cont {
   padding: 14px 0px;
 }
@@ -69,6 +74,10 @@
   margin-right: 10px;
   border-radius: 15px;
   border: 1px solid #00bd5f;
+}
+
+.header {
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
 }
 
 .badge a {

@@ -8,7 +8,7 @@ const successCard = () => {
       <div class="summary-center">
         <div class="UCs-order-detail">
           <span class="UCs-order-detail-span">Payment Method:</span>{" "}
-          <span> Telenor</span>
+          <span>Telenor</span>
         </div>
         <div class="UCs-order-detail">
           <span class="UCs-order-detail-span">Payment Status:</span>{" "}

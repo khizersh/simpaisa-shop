@@ -4,7 +4,7 @@ import SuccessCard from "../modules/success/successCard";
 
 const Success = () => {
   return (
-    <div className="container-fluid banner-container">
+    <div className="container-fluid banner-container p-0">
       <div className="row">
         <div className="col-12">
           <a>
@@ -32,7 +32,27 @@ const Success = () => {
                 type="text"
                 maxlength="20"
               />
-              <span class="circleCopy"></span>
+              <span class="circleCopy">
+                <svg
+                  version="1.1"
+                  // style="width: 22px;"
+                  style={{ width: 22 }}
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 448 512"
+                  xmlSpace="preserve"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M297.96,114.3V5H23.07v392.7h126.97V507h274.89V114.3H297.96z M42.77,376.1V26.6h235.49v87.7H150.04v261.8H42.77z
+                                M405.23,485.4H169.74V135.9h235.49V485.4z"
+                    class="fa-primary"
+                  ></path>
+                </svg>
+              </span>
               <p class="UCs-form__field-instruction-text">
                 To redeem your code, visit Midasbuy Page. Enter your Players ID
                 and Voucher, and click on the box that says "redeem Code".

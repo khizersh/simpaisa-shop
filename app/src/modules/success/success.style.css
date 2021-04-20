@@ -47,7 +47,7 @@
 }
 
 .UCs-form__field-instruction-text {
-  font-family: "Lato";
+  font-family: sans-serif;
   color: #1e1e1e;
   font-size: 14px;
   letter-spacing: 0px;
@@ -99,13 +99,32 @@
 }
 .UCs-order-detail {
   color: #666;
+  font-family: sans-serif;
   font-size: 16px;
   padding-top: 7px;
 }
 
 .UCs-order-detail-span {
+  font-family: sans-serif;
   width: 240px;
   display: inline-block;
+}
+
+.circleCopy {
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #cdcdcd;
+  color: #00bd5f;
+  margin-right: 5px;
+  background-color: #504461;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 54px;
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  margin: 0 0 0 10px;
 }
 
 .UCs-btn-field-wrapper.single-btn-form {
@@ -125,4 +144,16 @@
   font-size: 18px;
   color: white;
   box-shadow: 3px 1px 7px 2px #0000005e;
+}
+
+@media screen and (max-width: 427px) {
+  .UCs-order {
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+  }
+  .UCs-order-detail-span {
+    width: 180px;
+    display: inline-block;
+  }
 }

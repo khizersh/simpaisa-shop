@@ -24,14 +24,14 @@ const SectionVoucher = () => {
     <div className="card shadow p-3">
       <h2 class="circle">
         <span>2</span>
-        Enter ID
+        Select Recharge
       </h2>
 
       <div className="row">
         {array.map((m, i) => (
           <div
             key={i}
-            className="col-6 col-md-4 voucher-list-element"
+            className="col-6 col-md-4 voucher-list-element "
             onClick={() => onClick(m)}
           >
             <a className={`${token && token.id === m.id ? "active" : ""} pt-3`}>

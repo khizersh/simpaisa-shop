@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "./detail.style.css";
 import "./detailPayment.css";
 
 const ConfirmPayment = () => {
+  const router = useHistory();
   const array = [
     { id: 1, title: "70 Tokens" },
     { id: 2, title: "720 Tokens" },
@@ -18,6 +19,12 @@ const ConfirmPayment = () => {
     setToken(m);
   };
 
+  const onClickPay = () => {
+    // if user register then call simpaisa api to initiate transaction which
+    //  return paymentTransactionId which will pass in mp.createPayment(id)
+    router.push("/success");
+  };
+
   useEffect(() => {
     setToken(array[0]);
   }, []);
@@ -29,7 +36,7 @@ const ConfirmPayment = () => {
         Confirm Payment
       </h2>
 
-      <ul className="ul-paymentChannels">
+      <div className="ul-paymentChannels">
         <div id="paymentChannel_61" className="payment-channel-element active">
           <div className="payment-channel-link">
             <input type="hidden" name="displayName" value="Telenor" />
@@ -72,9 +79,12 @@ const ConfirmPayment = () => {
                 className="number-form-input"
                 placeholder="Enter your mobile number"
               />
-              <Link className="number-form-btn__submit" to="success">
+              <button
+                className="number-form-btn__submit btn"
+                onClick={onClickPay}
+              >
                 Pay Now
-              </Link>
+              </button>
             </div>
             <div className="payment-tagline-container">
               <p className="payment-tagline" id="payment-channel__tagline_61">
@@ -84,7 +94,7 @@ const ConfirmPayment = () => {
             <div className="best-deal-label"></div>
           </div>
         </div>
-      </ul>
+      </div>
     </div>
   );
 };

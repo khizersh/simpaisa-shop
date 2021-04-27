@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import "./detail.style.css";
 import "./detailPayment.css";
 
-const ConfirmPayment = () => {
+const ConfirmPayment = ({ image }) => {
   const router = useHistory();
   const array = [
     { id: 1, title: "70 Tokens" },
@@ -31,7 +31,7 @@ const ConfirmPayment = () => {
 
   return (
     <div className="card shadow p-3">
-      <h2 class="circle">
+      <h2 className="circle">
         <span>2</span>
         Confirm Payment
       </h2>
@@ -48,11 +48,7 @@ const ConfirmPayment = () => {
                 // style=" display: flex; line-height: 38px; "
                 style={{ display: "flesx", lineHeight: "38px" }}
               >
-                <img
-                  className="logo"
-                  src="http://shop.simpaisa.com/assets/img/EasypaisaE.png"
-                  alt="Easypasia_PK logo"
-                />
+                <img className="logo" src={image} alt="Easypasia_PK logo" />
               </figure>
             </div>
 

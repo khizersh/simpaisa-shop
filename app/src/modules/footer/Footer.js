@@ -3,49 +3,49 @@ import "./footer.style.css";
 
 const Footer = () => {
   return (
-    <footer class="footer-container">
-      <div class="footer-area">
-        <section class="left-blocks-container">
-          <div class="socials-container">
-            <p class="social-title">Stay updated with us:</p>
-            <div class="footer__social-media-container">
+    <footer className="footer-container">
+      <div className="footer-area">
+        <section className="left-blocks-container">
+          <div className="socials-container">
+            <p className="social-title">Stay updated with us:</p>
+            <div className="footer__social-media-container">
               <a
                 href="#"
-                class="social-icon-container"
+                className="social-icon-container"
                 aria-label="simpaisashop Official Facebook"
                 rel="noopener"
               >
-                <i class="fab fa-facebook fa-2x"></i>
+                <i className="fab fa-facebook fa-2x"></i>
               </a>
             </div>
           </div>
 
-          <div class="support-container">
-            <p class="support-title">Need help?</p>
-            <div class="support-icons"></div>
+          <div className="support-container">
+            <p className="support-title">Need help?</p>
+            <div className="support-icons"></div>
             <a
               href="#"
-              class="support-link"
+              className="support-link"
               aria-label="Contact simpaisashop support"
               rel="noopener"
             >
-              <div class="contact-icon pr-2">
-                <i class="fas fa-phone"></i>
+              <div className="contact-icon pr-2">
+                <i className="fas fa-phone"></i>
               </div>
-              <div class="contact-text">Contact Us</div>
+              <div className="contact-text">Contact Us</div>
             </a>
           </div>
-          <div class="international-container">
-            <a href="#" class="international-flag-block" rel="noopener">
-              <i class="far fa-flag"></i>
+          <div className="international-container">
+            <a href="#" className="international-flag-block" rel="noopener">
+              <i className="far fa-flag"></i>
 
-              <div class="international__country-name">Pakistan</div>
+              <div className="international__country-name">Pakistan</div>
             </a>
           </div>
         </section>
 
-        <section class="right-blocks-container">
-          <div class="legal-content-container">
+        <section className="right-blocks-container">
+          <div className="legal-content-container">
             <a href="#" rel="noopener">
               Marketing &amp; Partnerships
             </a>
@@ -56,7 +56,7 @@ const Footer = () => {
             <a href="#" rel="noopener">
               Privacy Policy
             </a>
-            <div class="copyright-container">
+            <div className="copyright-container">
               {" "}
               © Copyright simpaisa Payments{" "}
             </div>

@@ -2,6 +2,8 @@ import React from "react";
 import ConfirmPayment from "../modules/detail/ConfirmPayment";
 import "../modules/detail/detail.style.css";
 import SectionVoucher from "../modules/detail/SectionVoucher";
+import banner from "../images/banner-detail.png";
+import easypaisa from "../images/Easypaisa.png";
 
 const Detail = () => {
   return (
@@ -9,10 +11,7 @@ const Detail = () => {
       <div className="container-fluid container-custom">
         <div className="row ">
           <div className="col-12 col-md-5 pb-5">
-            <img
-              src="http://shop.simpaisa.com/assets/img/omlet.png"
-              width="100%"
-            />
+            <img src={banner} width="100%" />
             <h2 className="product-title">PUBG Battlegrounds</h2>
             <article className="product__description">
               <p className="desc">
@@ -27,7 +26,7 @@ const Detail = () => {
           </div>
           <div className="col-12 col-md-7">
             <div className="card shadow p-3">
-              <h2 class="circle">
+              <h2 className="circle">
                 <span>1</span>
                 Enter ID
               </h2>
@@ -49,7 +48,7 @@ const Detail = () => {
               <SectionVoucher />
             </div>
             <div className="mt-4">
-              <ConfirmPayment />
+              <ConfirmPayment image={easypaisa} />
             </div>
           </div>
         </div>

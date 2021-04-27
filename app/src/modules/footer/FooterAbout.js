@@ -1,5 +1,9 @@
 import React from "react";
 import "./footer.style.css";
+import support from "../../images/time.png";
+import easy from "../../images/pay_in_seconds.png";
+import delivery from "../../images/fast_delivery.png";
+import promo from "../../images/fast_delivery.png";
 
 const FooterAbout = () => {
   return (
@@ -19,7 +23,7 @@ const FooterAbout = () => {
             <div className="simpaisa-about__card__icon-area">
               <img
                 className="simpaisa-about__icon-card"
-                src="http://shop.simpaisa.com/assets/img/pay_in_seconds.png"
+                src={support}
                 alt="Quick icon"
                 id="simpaisa-about__card__icon-style"
               />
@@ -38,7 +42,7 @@ const FooterAbout = () => {
             <div className="simpaisa-about__card__icon-area">
               <img
                 className="simpaisa-about__icon-card"
-                src="http://shop.simpaisa.com/assets/img/pay_in_seconds.png"
+                src={easy}
                 alt="Delivery icon"
                 id="simpaisa-about__card__icon-style"
               />
@@ -58,7 +62,7 @@ const FooterAbout = () => {
             <div className="simpaisa-about__card__icon-area">
               <img
                 className="simpaisa-about__icon-card"
-                src="http://shop.simpaisa.com/assets/img/pay_in_seconds.png"
+                src={delivery}
                 alt="Customer support"
                 id="simpaisa-about__card__icon-style"
               />
@@ -78,7 +82,7 @@ const FooterAbout = () => {
             <div className="simpaisa-about__card__icon-area">
               <img
                 className="simpaisa-about__icon-card"
-                src="http://shop.simpaisa.com/assets/img/pay_in_seconds.png"
+                src={promo}
                 alt="Promo icon"
                 id="simpaisa-about__card__icon-style"
               />

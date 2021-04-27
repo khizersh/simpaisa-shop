@@ -1,4 +1,19 @@
+import { GET_PRODUCT } from "./apiLinks";
+
 const { default: axios } = require("axios");
+
+export const getProducts = async () => {
+  let body = {
+    merchantId: "1000002",
+  };
+
+  try {
+    const data = await post(GET_PRODUCT, body);
+    return data;
+  } catch (error) {
+    return null;
+  }
+};
 
 export const post = (url, body) => {
   let headers = {

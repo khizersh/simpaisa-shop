@@ -1,6 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
 import "../home/home.style.css";
+import slider1 from "../../images/slider1.jpg";
+import slider2 from "../../images/slider2.jpg";
+import slider3 from "../../images/slider3.jpg";
 
 const HomePageSlider = () => {
   var settings = {
@@ -12,20 +15,16 @@ const HomePageSlider = () => {
     autoplay: true,
     arrows: true,
   };
+
+  const images = [slider1, slider2, slider3];
   return (
     <Slider {...settings}>
-      <div>
-        <img
-          src="http://shop.simpaisa.com/assets/img/slider/pubg_ts_pk.jpg"
-          width="100%"
-        />
-      </div>
-      <div>
-        <img
-          src="http://shop.simpaisa.com/assets/img/slider/wwh_pl_en.jpg"
-          width="100%"
-        />
-      </div>
+      {images.length &&
+        images.map((m, i) => (
+          <div key={i}>
+            <img src={m} width="100%" />
+          </div>
+        ))}
     </Slider>
   );
 };

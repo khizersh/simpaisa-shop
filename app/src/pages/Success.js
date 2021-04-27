@@ -1,6 +1,7 @@
 import React from "react";
 import "../modules/success/success.style.css";
 import SuccessCard from "../modules/success/successCard";
+import banner from "../images/PUBG-Banner.png";
 
 const Success = () => {
   return (
@@ -8,10 +9,7 @@ const Success = () => {
       <div className="row">
         <div className="col-12">
           <a>
-            <img
-              src="http://shop.simpaisa.com/assets/img/slider/PUBG-Banner.png"
-              width="100%"
-            />
+            <img src={banner} width="100%" />
           </a>
         </div>
         <div className="col-12">
@@ -27,12 +25,12 @@ const Success = () => {
             Your PUBG Mobile UC Redeem Code for 60uc is
             <div className=" text-center">
               <input
-                class="UCs-form-input"
+                className="UCs-form-input"
                 placeholder="xxxx-xxxx-xxxx-xxxx"
                 type="text"
-                maxlength="20"
+                maxLength="20"
               />
-              <span class="circleCopy">
+              <span className="circleCopy">
                 <svg
                   version="1.1"
                   // style="width: 22px;"
@@ -49,25 +47,27 @@ const Success = () => {
                     fill="currentColor"
                     d="M297.96,114.3V5H23.07v392.7h126.97V507h274.89V114.3H297.96z M42.77,376.1V26.6h235.49v87.7H150.04v261.8H42.77z
                                 M405.23,485.4H169.74V135.9h235.49V485.4z"
-                    class="fa-primary"
+                    className="fa-primary"
                   ></path>
                 </svg>
               </span>
-              <p class="UCs-form__field-instruction-text">
+              <p className="UCs-form__field-instruction-text">
                 To redeem your code, visit Midasbuy Page. Enter your Players ID
                 and Voucher, and click on the box that says "redeem Code".
                 <br />
                 If you have any questions, please contact our Customer Service
                 at support <span> &nbsp; customerservices@easypaisa.com</span>
               </p>
-              <div class="UCs-order__title text-left">Your order summary</div>
+              <div className="UCs-order__title text-left">
+                Your order summary
+              </div>
               <SuccessCard />
             </div>
           </h6>
         </div>
         <div className="col-12">
-          <div class="UCs-btn-field-wrapper single-btn-form">
-            <button class="UCs-btn">CONFIRM</button>
+          <div className="UCs-btn-field-wrapper single-btn-form">
+            <button className="UCs-btn">CONFIRM</button>
           </div>
         </div>
       </div>

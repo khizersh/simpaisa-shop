@@ -22,7 +22,7 @@ const SectionVoucher = () => {
 
   return (
     <div className="card shadow p-3">
-      <h2 class="circle">
+      <h2 className="circle">
         <span>2</span>
         Select Recharge
       </h2>
